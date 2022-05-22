@@ -1,7 +1,7 @@
 {
-  "name": "quizzical-trivia",
+  "name": "quiz-app",
   "version": "1.0.0",
-  "homepage": " https://yossraelhaddad.github.io/quizzical-trivia/",
+  "homepage": " https://yossraelhaddad.github.io/quiz-app/",
   "description": "",
   "main": "index.js",
   "scripts": {
