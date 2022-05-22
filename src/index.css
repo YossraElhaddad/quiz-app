@@ -78,6 +78,13 @@ button:active {
     margin: 20px;
 }
 
+.result {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+}
+
 .check-button {
     width: 120px;
     height: 35px;
@@ -123,14 +130,53 @@ button:active {
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+.option input {
+    opacity: 0;
+    z-index: 100;
+}
+
+.option label {
     text-align: center;
     padding: 5px;
     border: 0.794239px solid #4D5B9E;
     border-radius: 7.94239px;
     font-size: 10.24px;
     font-family: 'Inter', sans-serif;
+    cursor: pointer;
+    z-index: 90;
 }
 
-.option:hover {
-    cursor: pointer;
+.option input[type="radio"]:checked+label.selected-unsubmitted {
+    background-color: #D6DBF5;
+    border: none;
+}
+
+.selection{
+    color: #293264;
+}
+
+.correct {
+    background-color: #94D7A2;
+    
+}
+
+.incorrect {
+    background-color: #F8BCBC;
+    opacity: 0.5;
+}
+
+.unselected {
+    border: 0.771045px solid #4D5B9E;
+    opacity: 0.5;
+}
+
+span {
+    font-family: 'Inter';
+    font-weight: 700;
+    font-size: 12.8px;
+    line-height: 15px;
+    text-align: center;
+    color: #293264;
 }
